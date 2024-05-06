@@ -1,0 +1,80 @@
+---
+title: "Introducción a la estadística inferencial"
+author:
+- name: Simoneta Negrete Yankelevich
+  url: "https://www.researchgate.net/profile/Simoneta-Negrete-Yankelevich"
+  affiliation: "Red de ecología Funcional - INECOL"
+  affiliation_url: "https://inecol.mx/personal/index.php/redes-academicas/funcional/90-simoneta-negrete-yankelevich"
+  orcid_id: "0000-0002-4429-6662"
+- name: Carlos Cultid Medina
+  url: "https://www.researchgate.net/profile/Carlos-Cultid-Medina"
+  affiliation: "Red de Diversidad Biológica del Occidente Mexicano - INECOL"
+  affiliation_url: "https://www.inecol.mx/personal/index.php/redes-academicas/diversidad-biologica-del-occidente-mexicano/205-carlos-andres-cultid-medina"
+  orcid_id: "0000-0002-4929-8405"
+- name: "Karen Lorena Velásquez-C"
+  url: "https://www.researchgate.net/profile/Karen-Velasquez-Carrillo?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6ImhvbWUiLCJwb3NpdGlvbiI6Imdsb2JhbEhlYWRlciJ9fQ"
+  affiliation: Posgrado INECOL
+  affiliation_url: https://github.com/klvelasquezc
+  orcid_id: "0000-0003-0414-1671"
+- name: Gabriel Andrade Ponce
+  url: "https://www.researchgate.net/profile/Gabriel-Andrade-Ponce?ev=hdr_xprf"
+  affiliation: "Postdoctoral Research Associate - Arthur Temple College of Forestry
+    and Agriculture"
+  affiliation_url: https://gpandradep.github.io/gpandradep/
+  orcid_id: "0000-0003-2416-1792"
+date: "05 02, 2024"
+description: |
+  Página del curso en su versión 2024
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+<aside>![](img/logoinecol.jpg "Inecol"){width="112"}</aside>
+
+## ¡Bienvenidos al curso! <span class="wave">👋</span>
+
+Este es la página del curso de **Introducción a la estadística inferencial**, versión 2024.
+
+![](https://i.pinimg.com/originals/d7/61/da/d761da18a809efc70ac8f631ff0150d1.jpg)
+
+# Cronograma del curso 📆
+
+[![Cronograma 2024](img/Cronograma2024.png)](https://classroom.google.com/u/0/c/MTg5NDkxODYwMzY0/m/NTQxMTU1OTg4NjM5/details)
+
+# Material de la clase 📚
+
+El material del curso está disponible en la página de classroom, en las siguientes ligas
+
+1.  [Él papel de la estadística en la investigación](https://classroom.google.com/u/0/w/MTg5NDkxODYwMzY0/tc/MjcwNzUxODUyMTc2)
+
+2.  [Introducción al Lenguaje R](https://classroom.google.com/u/0/w/MTg5NDkxODYwMzY0/tc/MjcwNjMxMTc1ODkx)
+
+3.  [Estimación 1 y 2](https://classroom.google.com/u/0/w/MTg5NDkxODYwMzY0/tc/MjcwODkyMzU4Mjk5)
+
+4.  [Análisis exploratorios](https://classroom.google.com/u/0/w/MTg5NDkxODYwMzY0/tc/MjcwODkyMzU4NDM1)
+
+5.  [Prueba de hipótesis 1 y 2](https://classroom.google.com/u/0/w/MTg5NDkxODYwMzY0/tc/MjcwODkyNTcyNTc5)
+
+6.  [Modelos lineales 1 y 2](https://classroom.google.com/u/0/w/MTg5NDkxODYwMzY0/tc/MjcwODkyNTcyODcx)
+
+# Scripts de clase 📊
+
+Los scripts pueden ser visualizados en html en la parte superior derecha de esta página.
+
+![](img/clases.png)
+
+Recuerden que las bases de datos se encuentran en el material de clase
+
+## Adicional {.appendix}
+
+**Monitor del curso 2024**
+
+Karen Lorena Velásquez - C 📧 [karen.velasquez\@posgrado.ecologia.edu.mx](mailto:karen.velasquez@posgrado.ecologia.edu.mx){.email}
+
+**Edición de Scripts y página web**: Gabriel Andrade Ponce - Karen Lorena Velásquez - C
+
+Página hecha con la paquetería `distill` en RMarkdown

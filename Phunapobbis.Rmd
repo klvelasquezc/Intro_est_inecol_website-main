@@ -1,0 +1,112 @@
+---
+title: "Script Prueba de hipótesis de una poblacion-bis"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+library(downloadthis)
+
+## Link del script
+download_link(
+  link = "https://drive.google.com/file/d/1sB25DKc_AZLpweYVYy3YJWPFCyouHKEE/view",
+  button_label = "Descargar script",
+  button_type = "primary",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+
+```
+
+```{r echo=FALSE}
+## Link del script pdf
+download_link(
+  link = "https://github.com/gpandradep/Intro_est_inecol_website/raw/main/scripts/Phipot1bis.pdf",
+  button_label = "Descargar script en pdf",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+*NOTA: Para descargar los datos, dar click en el boton. Aparece una pantalla con los datos, luego dar click derecho y poner guardar como (save as). Guardar el txt donde van a trabajar*
+```{r echo=FALSE}
+## Link del script pdf
+download_link(
+  link = "https://raw.githubusercontent.com/gpandradep/Intro_est_inecol_website/main/data/skewdata.txt",
+  button_label = "Descargar datos",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+
+# C.2
+
+Vamos a escribir una función para calcular sesgo.
+
+```{r}
+skew<-function(x){
+m3<-sum((x-mean(x))^3)/length(x)
+s3<-sqrt(var(x))^3
+m3/s3  }
+```
+
+
+veamos los datos skewdata
+
+```{r include=FALSE}
+data<-read.table("data/skewdata.txt",header=T)
+attach(data)
+names(data)
+```
+
+```{r eval=FALSE}
+data<-read.table("skewdata.txt",header=T)
+attach(data)
+names(data)
+```
+
+```{r}
+hist(values)
+```
+
+
+
+Calculemos el sesgo
+
+```{r}
+skew(values)
+```
+
+Ahora hagamos una prueba de t para determinar si hay sesgo respecto a lo esperado para una población de inferencia con distribución normal
+
+```{r}
+skew(values)/sqrt(6/length(values))
+1-pt(2.949,28)
+```
+
+¿Cual es la conclusión?.
+Efectivamente está más sesgado de los esperado normalmente, ¿que se puede hacer, si insistimos en cumplir con la normalidad?
+
+```{r}
+skew(sqrt(values))/sqrt(6/length(values))
+skew(log(values))/sqrt(6/length(values))
+```
+
+
+```{r}
+kurtosis<-function(x) {
+m4<-sum((x-mean(x))^4)/length(x)
+s4<-var(x)^2
+m4/s4 - 3  }
+kurtosis(values)
+kurtosis(values)/sqrt(24/length(values))
+```

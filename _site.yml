@@ -1,0 +1,61 @@
+name: "website"
+title: "Introducción a la estadística inferencial"
+description: |
+  Página del curso en su versión 2022
+output_dir: "docs"
+navbar:
+  left:
+   - text: "Links"
+     hreft: "links.html"
+   - text: "Generaciones"
+     hreft: "generaciones.html"
+  right:
+   - text: "Scripts"
+     menu:
+      - text: "Estimación 1"
+        href: Estimacion1.html
+      - text: "Estimación 2"
+        href: Estimacion2.html
+      - text: "Estimación 2 bis"
+        href: Estimacion2bis.html
+      - text: "Exploratorios"
+        href: Exploratorios.html
+      - text: "Exploratorios con ggplot"
+        href: Explor_ggplot.html
+      - text: "Paneles de correlación"
+        href: PanelCorrel.html
+      - text: "Prueba de hipótesis 1"
+        href: Phunapob.html
+      - text: "Prueba de hipótesis 1 bis"
+        href: Phunapobbis.html
+      - text: "Prueba de hipótesis 2"
+        href: Phdospob.html
+      - text: "Prueba de hipótesis 2 bis"
+        href: Phdospobbis.html
+      - text: "Regresión simple"
+        href: Regresionsimp.html
+      - text: "Correlación"
+        href: Correlacion.html
+      - text: "ANDEVA"
+        href: ANDEVA.html
+   - text: "Tareas"
+     menu:
+      - text: "Tarea 1"
+        href: Tarea_1.html
+      - text: "Tarea 2"
+        href: Tarea_2.html
+      - text: "Tarea 3"
+        href: Tarea_3.html
+      - text: "Tarea 4"
+        href: Tarea_4.html
+      - text: "Tarea 5"
+        href: Tarea_5.html
+      - text: "Tarea 6"
+        href: Tarea_6.html
+        
+     
+      
+output:
+  distill::distill_article:
+   highlight: rstudio
+   toc: true
