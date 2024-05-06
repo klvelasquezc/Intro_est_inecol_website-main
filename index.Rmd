@@ -77,4 +77,4 @@ Karen Lorena Velásquez - C 📧 [karen.velasquez\@posgrado.ecologia.edu.mx](mai
 
 **Edición de Scripts y página web**: Gabriel Andrade Ponce - Karen Lorena Velásquez - C
 
-Página hecha con la paquetería `distill` en RMarkdown
+Página hecha con la paquetería `distill` en RMarkdown.
