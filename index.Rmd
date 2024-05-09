@@ -43,7 +43,7 @@ Este es la página del curso de **Introducción a la estadística inferencial**,
 
 # Cronograma del curso 📆
 
-[![Cronograma 2024](img/Cronograma2024.png)](https://classroom.google.com/u/0/c/MTg5NDkxODYwMzY0/m/NTQxMTU1OTg4NjM5/details)
+[![Cronograma 2024](img/Cronograma2024.jpg)](https://classroom.google.com/u/0/c/MTg5NDkxODYwMzY0/m/NTQxMTU1OTg4NjM5/details)
 
 # Material de la clase 📚
 
